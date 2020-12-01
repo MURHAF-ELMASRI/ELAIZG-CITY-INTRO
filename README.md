@@ -6,5 +6,5 @@ this is a school project <br>
 -css <br>
 -bootstrap4 <br>
 ## you can look for the page in the link below
-https://murhaf-elmasri.github.io/ELAIZG-CITY-TOUR/
+https://murhaf-elmasri.github.io/ELAIZG-CITY-TOUR/sayfalar/
  
