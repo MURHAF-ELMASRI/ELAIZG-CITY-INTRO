@@ -41,7 +41,7 @@ body {
     background-size: 1750px;
 }
 .navbar {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .navbar li {
     padding: 0 100px 0 100px;
@@ -62,9 +62,9 @@ main {
     width: 100%;
 }
 
-.container  {
+.container {
     grid-area: b;
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(130, 128, 128);
 }
 .container h1 {
@@ -86,23 +86,51 @@ main {
     margin: 10px;
     list-style: none;
     color: rgb(130, 128, 128);
-    font-size: 25px;
+    font-size: 20px;
+}
+.left-side li:hover {
+    background-color: gray;
+}
+.left-side li:hover a{
+    
+    color: white;
 }
 
-footer{
+footer {
     overflow: hidden;
     line-height: 20px;
     color: rgb(161, 161, 161);
     margin-top: 300px;
-    background: rgb(52,58,64);
+    background: rgb(52, 58, 64);
     height: 300px;
 }
 
-footer .kaynak{
-   
+footer .kaynak {
     position: relative;
     top: 100px;
     left: 100px;
-  
-    
+}
+/* body::-webkit-scrollbar{
+    width:1rem
+}
+body::-webkit-scrollbar-track{
+    background-color: aqua;
+}
+body::-webkit-slider-thumb{
+    background: black;
+} */
+
+
+
+body::-webkit-scrollbar {
+   width: .7rem;
+}
+
+body::-webkit-scrollbar-track {
+    width: 0.02rem;
+    background: whitesmoke;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #90a4ae;
+    border-radius: 6px;
 }

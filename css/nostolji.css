@@ -10,7 +10,8 @@ body {
         'a a a'
         'nav nav nav'
         'c c c'
-        'c c c';
+        'c c c'
+        'foot foot foot';
 }
 
 header {
@@ -28,11 +29,9 @@ nav {
     grid-area: nav;
 }
 
-header .container  {
-    
+header .container {
     color: white;
-    margin:10%;
-    
+    margin: 10%;
 }
 header .container span {
     color: #e6c073;
@@ -44,13 +43,12 @@ main {
     background-color: whitesmoke;
 }
 
-main .container{
+main .container {
     margin: 30px;
 }
 
-
 .navbar {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .navbar li {
     padding: 0 100px 0 100px;
@@ -63,8 +61,7 @@ main .container{
     border: none;
 }
 
-
-.content{
+.content {
     margin: 40px;
     display: grid;
     grid-gap: 50px;
@@ -73,14 +70,41 @@ main .container{
     grid-auto-flow: dense;
 }
 
-
-.content>img{
-    border: solid 5px #cb3b3b ;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition: filter .2s ease-in-out ;
+.content > img {
+    border: solid 5px #cb3b3b;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.2s ease-in-out;
 }
-.content>img:hover{
-    filter: drop-shadow(20px 10px 0.5rem rgba(73, 73, 73, 0.979) );
+.content > img:hover {
+    filter: drop-shadow(20px 10px 0.5rem rgba(73, 73, 73, 0.979));
+}
+
+body::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+body::-webkit-scrollbar-track {
+    width: 0.02rem;
+    background: whitesmoke;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #90a4ae;
+    border-radius: 6px;
+}
+
+footer {
+    grid-area: foot;
+    overflow: hidden;
+    line-height: 20px;
+    color: rgb(161, 161, 161);
+    background: rgb(52, 58, 64);
+    height: 300px;
+}
+
+footer .kaynak {
+    position: relative;
+    top: 100px;
+    left: 100px;
 }

@@ -10,7 +10,8 @@ body {
         'a a a'
         'nav nav nav'
         'b c c'
-        'b c c';
+        'b c c'
+        'foot foot foot';
 }
 
 header {
@@ -26,6 +27,7 @@ header {
 
 nav {
     grid-area: nav;
+   
 }
 header .container  {
     
@@ -58,7 +60,7 @@ main {
     filter: drop-shadow(30px 10px 1rem rgb(130, 128, 128));
 }
 .navbar {
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .navbar li {
     padding: 0 100px 0 100px;
@@ -79,7 +81,7 @@ main {
 }
 .intro {
     margin: 60px 100px 0 40px;
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(130, 128, 128);
 }
 
@@ -91,7 +93,11 @@ main {
     position: relative;
 }
 .left-side li:hover {
-    background-color: rgb(243, 243, 243);
+    background-color: gray;
+}
+.left-side li:hover a{
+    
+    color: white;
 }
 
 .left-side li a {
@@ -99,5 +105,35 @@ main {
     margin: 10px;
     list-style: none;
     color: rgb(130, 128, 128);
-    font-size: 25px;
+    font-size: 20px;
+}
+
+
+body::-webkit-scrollbar {
+   width: .7rem;
+}
+
+body::-webkit-scrollbar-track {
+    width: 0.02rem;
+    background: whitesmoke;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #90a4ae;
+    border-radius: 6px;
+}
+footer {
+    grid-area: foot;
+    z-index: 1;
+    overflow: hidden;
+    line-height: 20px;
+    color: rgb(161, 161, 161);
+    
+    background: rgb(52, 58, 64);
+    height: 300px;
+}
+
+footer .kaynak {
+    position: relative;
+    top: 100px;
+    left: 100px;
 }
