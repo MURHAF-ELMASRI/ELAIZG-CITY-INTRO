@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: whitesmoke;
@@ -91,8 +95,7 @@ main {
 .left-side li:hover {
     background-color: gray;
 }
-.left-side li:hover a{
-    
+.left-side li:hover a {
     color: white;
 }
 
@@ -120,10 +123,8 @@ body::-webkit-slider-thumb{
     background: black;
 } */
 
-
-
 body::-webkit-scrollbar {
-   width: .7rem;
+    width: 0.7rem;
 }
 
 body::-webkit-scrollbar-track {
